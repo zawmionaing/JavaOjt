@@ -18,8 +18,7 @@ public class UserController {
 
     @RequestMapping(value = "/save", method = RequestMethod.POST)
     public ModelAndView save(@ModelAttribute User user) {
-
-        System.out.println("hellooooo");
+        String str="asdfasdfa";
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("data_show");
         modelAndView.addObject("user", user);
