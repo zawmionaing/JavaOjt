@@ -18,6 +18,11 @@ public class UserController {
 
     @RequestMapping(value = "/save", method = RequestMethod.POST)
     public ModelAndView save(@ModelAttribute User user) {
+
+        String str1="git testing string";
+        String str2="git testing string";
+        String str3="git testing string";
+
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("data_show");
         modelAndView.addObject("user", user);
